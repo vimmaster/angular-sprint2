@@ -1,0 +1,13 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+.centered {
+    text-align: center;
+}
+
+#p2 {
+    margin: auto;
+    width: 50%;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
