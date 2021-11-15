@@ -1,14 +1,15 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+$spacer: 1.5rem;
+
 .centered {
     text-align: center;
 }
 
 .p-margins {
-    border: solid 2px red;
-    margin: auto;
-    width: 200px;
+    margin: auto !important;
+    width: 50% !important;
 }
 
 #img1 {
@@ -26,12 +27,47 @@ $secondary: #FA5959;
     border-radius: 250px 0px 0px 250px;
     position: absolute;
     right: 0;
-    top: 35%;
+    top: 55%;
     z-index: -1;
+}
+
+.black-nav-link {
+    color: black !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.black-nav-link:visited {
+    border-bottom: solid red 2px !important;
 }
 
 .my-col {
     display: flex;
+    justify-content: space-around;
+}
+
+.my-card {
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0.2cm 0.2cm 0.5cm gray;
+    border-radius: 10px;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+.my-button {
+}
+*/
+
+// large
+@media screen and (max-width: 1199.98px) {
+    .my-col {
+        flex-direction: column;
+    }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
