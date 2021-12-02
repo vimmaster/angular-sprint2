@@ -3,15 +3,21 @@ $secondary: #FA5959;
 
 $spacer: 1.5rem;
 
-.centered {
+html {
     text-align: center;
 }
-
+/*
+body {
+    font-family: 'Source Code Pro', monospace !important;
+}
+*/
+.left {
+    text-align: left;
+}
 .p-margins {
     margin: auto !important;
     width: 50% !important;
 }
-
 #div2 {
     background-color: $primary;
     width: 600px;
@@ -22,17 +28,14 @@ $spacer: 1.5rem;
     top: 35%;
     z-index: -1;
 }
-
 .my-nav-link {
     color: black !important;
     font-size: 20px;
     font-weight: bold;
 }
-
 .my-nav-link:visited {
     border-bottom: solid red 10px !important;
 }
-
 .div3 {
     background-color: $primary;
     width: 600px;
@@ -43,43 +46,51 @@ $spacer: 1.5rem;
     top: 140%;
     z-index: -1;
 }
-
 .my-col {
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: space-around;
 }
-
 .my-card {
     padding: 20px 20px 20px 20px;
     box-shadow: 0.2cm 0.2cm 0.5cm gray;
     border-radius: 10px;
-    text-align: center;
 }
-
 #c0 {
     align-self: flex-start;
 }
-
 #c1 {
     align-self: center;
 }
-
 #c2 {
     align-self: flex-end;
 }
-
-// large
 @media screen and (max-width: 992px) {
+    .navbar-collapse {
+        background-color: rgb(47, 53, 79);
+        opacity: 65%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 90%;
+    }
+    .nav-link1 {
+        $margin1: 100px;
+        margin-left: $margin1;
+        margin-right: $margin1; 
+        border-top: solid 2px white !important;
+        font-size: 40px !important;
+        color: white !important;
+        background-color: transparent !important;
+    }
     .my-col {
         height: auto;
         flex-direction: column;
     }
-
     #c0, #c1, #c2 {
         align-self: center;
     }
-
     .div3 {
         top: 190%;
     }
