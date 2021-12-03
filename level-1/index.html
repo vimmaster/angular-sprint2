@@ -20,18 +20,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <div id="first-nav-item">
+            <img src="../Imagenes/logo-bookmark.svg">
+            <img src="../Imagenes/icon-close.svg" onclick="closeNavbar()"></img>
+          </div>
+          <li class="nav-item nav-item1">
             <a class="nav-link nav-link1" href="#">FEATURES</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item1">
             <a class="nav-link nav-link1" href="#">PRICING</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item1">
             <a class="nav-link nav-link1" href="#">CONTACT</a>
           </li>
-          <li class="nav-item">
-            <button class="btn bg-secondary text-light nav-link1" type="submit">LOGIN</button>
+          <li class="nav-item nav-item1">
+            <button id="b1" class="btn bg-secondary text-light nav-link1" type="submit">LOGIN</button>
           </li>
+          <div id="last-nav-item">
+            <img src="../Imagenes/icon-facebook.svg">
+            <img src="../Imagenes/icon-twitter.svg">
+          </div>
         </ul>
       </div>
     </div>
@@ -56,13 +64,13 @@
   <p class="p-margins"> Our aim is to make it quick and easy for you to acces your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p1>
   <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active my-nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
+      <button class="nav-link active nav-link1" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link my-nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
+      <button class="nav-link nav-link1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link my-nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"> Easy Sharing</button>
+      <button class="nav-link nav-link1" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"> Easy Sharing</button>
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
@@ -117,8 +125,8 @@
   <div class="my-col">
     <div id="c0" class="my-card">
       <img class="-image" src="../Imagenes/logo-chrome.svg" alt="Chrome Logo">
-      <p class=""> Add to Chorme</p>
-      <p class=""> Minimum version 62 </p>
+      <p> Add to Chorme</p>
+      <p> Minimum version 62 </p>
       <button type="button" class="btn btn-primary my-button"> Add & Install Extension </button>
     </div>
     <div id="c1" class="my-card">
@@ -128,7 +136,7 @@
       <button type="button" class="btn btn-primary my-button"> Add & Install Extension </button>
     </div>
     <div id="c2" class="my-card">
-      <img class="-image" src="../Imagenes/logo-opera.svg" alt="Opera Logo">
+      <img class="centered-image" src="../Imagenes/logo-opera.svg" alt="Opera Logo">
       <p> Add to Opera</p>
       <p> Minimum version 46 </p>
       <button type="button" class="btn btn-primary my-button"> Add & Install Extension </button>
@@ -189,7 +197,8 @@
   <div class="mt-3">
     <button type="button" class="btn btn-primary"> More info</button>
   </div>
-      <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="close-navbar.js"></script>
 </body>
 </html>

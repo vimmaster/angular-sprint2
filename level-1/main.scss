@@ -14,6 +14,9 @@ body {
 .left {
     text-align: left;
 }
+#first-nav-item, #last-nav-item {
+    display: none;
+}
 .p-margins {
     margin: auto !important;
     width: 50% !important;
@@ -28,13 +31,13 @@ body {
     top: 35%;
     z-index: -1;
 }
-.my-nav-link {
+.nav-link1 {
     color: black !important;
     font-size: 20px;
     font-weight: bold;
 }
-.my-nav-link:visited {
-    border-bottom: solid red 10px !important;
+.nav-link1:visited {
+    border-bottom: solid $secondary 10px !important;
 }
 .div3 {
     background-color: $primary;
@@ -67,22 +70,44 @@ body {
 }
 @media screen and (max-width: 992px) {
     .navbar-collapse {
-        background-color: rgb(47, 53, 79);
-        opacity: 65%;
+        background-color: rgba(47, 53, 79, 0.75);
         position: fixed;
         top: 0;
         left: 0;
         height: 100%;
-        width: 90%;
+        width: 100%;
+    }
+    #first-nav-item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+    }
+    .nav-item1 {
+        border-top: solid 1px white !important;
+        $margin1: 100px;
+        margin-left: $margin1 !important;
+        margin-right: $margin1 !important;
     }
     .nav-link1 {
-        $margin1: 100px;
-        margin-left: $margin1;
-        margin-right: $margin1; 
-        border-top: solid 2px white !important;
         font-size: 40px !important;
         color: white !important;
+    }
+    #b1 {
         background-color: transparent !important;
+        border: solid 4px white;
+        margin-top: 10px;
+    }
+    #last-nav-item {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(-50%);
+        width: 25%;
     }
     .my-col {
         height: auto;
