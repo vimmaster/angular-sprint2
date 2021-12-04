@@ -11,6 +11,9 @@ body {
     font-family: 'Source Code Pro', monospace !important;
 }
 */
+p {
+    color: grey;
+}
 .left {
     text-align: left;
 }
@@ -31,13 +34,14 @@ body {
     top: 35%;
     z-index: -1;
 }
-.nav-link1 {
-    color: black !important;
-    font-size: 20px;
-    font-weight: bold;
+.nav-link2 {
+    color: gray !important;
+    font-size: 16px;
 }
-.nav-link1:visited {
-    border-bottom: solid $secondary 10px !important;
+.nav-link2.active {
+    color: black !important;
+    font-weight: bold;
+    border-bottom: solid $secondary 2px !important;
 }
 .div3 {
     background-color: $primary;
@@ -55,9 +59,12 @@ body {
     justify-content: space-around;
 }
 .my-card {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0 20px 0;
     box-shadow: 0.2cm 0.2cm 0.5cm gray;
     border-radius: 10px;
+}
+.dots {
+    display: block;
 }
 #c0 {
     align-self: flex-start;
@@ -67,6 +74,9 @@ body {
 }
 #c2 {
     align-self: flex-end;
+}
+.accordion-button::after {
+  background-image: url("../Imagenes/icon-arrow.svg") !important;
 }
 @media screen and (max-width: 992px) {
     .navbar-collapse {
